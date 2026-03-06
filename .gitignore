@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+.npm/
+
+# Credenciales y Variables de Entorno (Fundamental para el challenge)
+cypress.env.json
+.env
+
+# Archivos generados por Cypress durante la ejecución
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# IDEs y Editores
+.vscode/
+.idea/
+*.swp
+*.iml
+
+# Logs y archivos de sistema
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
