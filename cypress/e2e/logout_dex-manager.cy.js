@@ -8,7 +8,7 @@ describe("Dex Manager - Logout", () => {
     // Antes de cada test, nos logueamos y navegamos al dashboard
     beforeEach(() => {
         cy.login();
-        cy.visit("/DexFrontEnd/#!/dashboard");
+        DashboardPage.visit();
     });
 
     // Caso de prueba: validar logout exitoso

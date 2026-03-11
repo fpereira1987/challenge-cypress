@@ -7,7 +7,7 @@ describe("Dex Manager - Media Library", () => {
     // Antes de cada test abrimos la pantalla de login usando el Page Object
     beforeEach(() => {
         cy.login();
-        cy.visit("/DexFrontEnd/#!/dashboard");
+        DashboardPage.visit();
     })
 
     // Caso: navegar hacia la sección Media Library

@@ -7,14 +7,18 @@ class DashboardPage {
         profilePicture: () => cy.get('.header-profile-picture').should('be.visible'),
         accountMenu: () => cy.get('#accountMenu').should('be.visible'),
         logoutMenuItem: () => cy.get('#accountMenu').contains('paper-icon-item', 'Cerrar sesión').should('be.visible'),
-        
+
         // Elementos del menú de navegación (Sidebar)
         navMenuContent: () => cy.contains('.nav-menu-trigger', 'CONTENIDO'),
         mediaLibraryMenuItem: () => cy.contains('paper-icon-item', 'Librería de Medias')
     }
 
+    // Navega directamente a la pantalla de dashboard
+    visit() {
+        cy.visit('/DexFrontEnd/#!/dashboard');
+    }
+
     // Acciones principales del Dashboard
-    
     // Ejecuta el click en el perfil de usuario del header
     clickProfilePicture() {
         this.elements.profilePicture().click();
