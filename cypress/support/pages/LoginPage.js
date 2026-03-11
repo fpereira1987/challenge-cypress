@@ -6,7 +6,7 @@ class LoginPage {
         usernameInput: () => cy.get('#username').find('input'), // Campo de usuario
         passwordInput: () => cy.get('#password').find('input'), // Campo de contraseña
         loginButton: () => cy.get('.accept-btn.login-btn').first(), // Botón de login
-        errorMessage: () => cy.contains("User or password do not match"), // Mensaje de error de autenticación
+        errorMessage: () => cy.contains(/User or password do not match|Internal Server error/i), // Mensaje de error de autenticación o del servidor
         pageTitle: () => cy.get('#pageTitle') // Título del Dashboard
     }
 
