@@ -3,9 +3,9 @@ class LoginPage {
 
     // Selectores centralizados para facilitar el mantenimiento
     elements = {
-        usernameInput: () => cy.get('input[autocomplete="on"]').first(), // Campo de usuario
-        passwordInput: () => cy.get('input[type="password"]').first(),   // Campo de contraseña
-        loginButton: () => cy.get('.accept-btn.login-btn').first(),      // Botón de login
+        usernameInput: () => cy.get('#username').find('input'), // Campo de usuario
+        passwordInput: () => cy.get('#password').find('input'), // Campo de contraseña
+        loginButton: () => cy.get('.accept-btn.login-btn').first(), // Botón de login
         errorMessage: () => cy.contains("User or password do not match"), // Mensaje de error de autenticación
         pageTitle: () => cy.get('#pageTitle') // Título del Dashboard
     }
