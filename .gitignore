@@ -2,16 +2,16 @@
 node_modules/
 .npm/
 
-# Credenciales y Variables de Entorno (Fundamental para el challenge)
+# Credenciales y variables de entorno
 cypress.env.json
 .env
 
-# Archivos generados por Cypress durante la ejecución
+# Archivos generados por Cypress
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 
-# IDEs y Editores
+# IDEs y editores
 .vscode/
 .idea/
 *.swp
